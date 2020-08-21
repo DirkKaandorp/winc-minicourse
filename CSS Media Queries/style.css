@@ -1,0 +1,74 @@
+body {
+  color: #07254c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #6f7d9c;
+}
+
+main,
+header {
+  border: 2px solid #e9c19f;
+  margin: 5px 0px;
+}
+
+main,
+header {
+  /* 'the works' */
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+
+  /* short-hand */
+  padding: 0px 10px 0px 10px;
+
+  /* short-short-hand */
+  padding: 0px 10px;
+}
+
+nav {
+  margin: 0 auto;
+  width: 50%;
+}
+.sub-ul {
+  list-style-type: none;
+  line-height: 1.6em;
+}
+
+.sub-ul em {
+  font-weight: bold;
+}
+
+a {
+  color: #3a1a00;
+}
+
+.navigatie-ul {
+  list-style-type: none;
+}
+
+.navigatieknop {
+  background-color: #091f4d;
+  color: #d2d2d2;
+  width: 200px;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.infoblok {
+  max-width: 400px;
+  padding: 20px;
+  margin: 0 0 0 10;
+}
+
+.nav-item {
+  display: inline;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: #5e5a57;
+    color: #1a1d1e;
+    font-size: 0.8em;
+    line-height: 1.3em;
+  }
+}
