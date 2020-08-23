@@ -1,0 +1,92 @@
+.header {
+  grid-area: h;
+  background-color: yellowgreen;
+  color: red;
+}
+
+.main {
+  grid-area: m;
+  background-color: darkblue;
+  color: lemonchiffon;
+}
+
+.widget {
+  grid-area: w;
+  background-color: lightseagreen;
+  color: black;
+}
+
+.footer {
+  grid-area: f;
+  background-color: maroon;
+  color: yellow;
+}
+
+.menu {
+  background-color: brown;
+  border: 2px solid burlywood;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+}
+
+.menu a {
+  color: burlywood;
+  text-decoration: none;
+}
+
+@media (min-width: 1001px) {
+  body {
+    background-color: orangered;
+    color: darkblue;
+  }
+
+  .container {
+    height: 600px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 9fr 1fr;
+    grid-template-areas:
+      "h m w"
+      "h f w";
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-color: black;
+    color: darkred;
+  }
+
+  .container {
+    height: 600px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 6fr 3fr 1fr;
+    grid-template-areas:
+      "h m"
+      "h w"
+      "h f";
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    background-color: rgb(241, 14, 185);
+    color: darkred;
+  }
+  .container {
+    height: 600px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 5fr 3fr 1fr;
+    grid-template-areas:
+      "h"
+      "m"
+      "w"
+      "f";
+  }
+}
